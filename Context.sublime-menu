@@ -1,0 +1,11 @@
+[
+    {
+        "caption": "Convert Unicode",
+        "id": "convert_unicode",
+        "children":
+        [
+            { "command": "unicode_characters_to_escape_sequences", "caption": "Characters To Escape Sequences" },
+            { "command": "unicode_escape_sequences_to_characters", "caption": "Escape Sequences To Characters" }
+        ]
+    }
+]

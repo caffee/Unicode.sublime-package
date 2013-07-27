@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "Convert: Characters To Escape Sequences",
+        "command": "unicode_characters_to_escape_sequences"
+    },
+    {
+        "caption": "Convert: Escape Sequences To Characters",
+        "command": "unicode_escape_sequences_to_characters"
+    }
+]

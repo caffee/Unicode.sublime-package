@@ -1,0 +1,6 @@
+*~
+*.lock
+*.DS_Store
+*.py[cod]
+*.zip
+*.sublime-package

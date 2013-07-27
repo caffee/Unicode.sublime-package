@@ -1,0 +1,4 @@
+[
+    { "keys": ["alt+shift+w"], "command": "unicode_characters_to_escape_sequences" },
+    { "keys": ["alt+shift+e"], "command": "unicode_escape_sequences_to_characters" }
+]
