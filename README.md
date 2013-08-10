@@ -19,9 +19,12 @@ Usage
 * __Main Menu:__ `Edit` | `Convert Unicode`  
 * __Context Menu:__ `Convert Unicode`  
 * __Command Palette:__ `Convert ...`  
-* __Keymap:__ (OSX, Windows, Linux)  
+* __Keymap:__ (Windows, Linux)  
   * Unicode characters to escape sequences: `alt+shift+w`  
   * Unicode escape sequences to characters: `alt+shift+e`  
+* __Keymap:__ (OSX)  
+  * Unicode characters to escape sequences: `super+alt+shift+w`  
+  * Unicode escape sequences to characters: `super+alt+shift+e`  
 
 LICENSE
 -------
