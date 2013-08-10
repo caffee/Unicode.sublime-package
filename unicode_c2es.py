@@ -27,16 +27,32 @@ import re
 
 # Convert unicode characters to escape sequences
 def convert(tb):
-  # Special characters: swedish, german
+  # Special characters: swedish, german, italian
   tb = re.sub('Å', '\u00C5', tb)
   tb = re.sub('Ä', '\u00C4', tb)
   tb = re.sub('Ö', '\u00D6', tb)
   tb = re.sub('Ü', '\u00DC', tb)
 
+  tb = re.sub('À', '\u00C0', tb)
+  tb = re.sub('È', '\u00C8', tb)
+  tb = re.sub('É', '\u00C9', tb)
+  tb = re.sub('Ì', '\u00CC', tb)
+  tb = re.sub('Ò', '\u00D2', tb)
+  tb = re.sub('Ó', '\u00D3', tb)
+  tb = re.sub('Ù', '\u00D9', tb)
+
   tb = re.sub('å', '\u00E5', tb)
   tb = re.sub('ä', '\u00E4', tb)
   tb = re.sub('ö', '\u00F6', tb)
   tb = re.sub('ü', '\u00FC', tb)
+
+  tb = re.sub('à', '\u00E0', tb)
+  tb = re.sub('è', '\u00E8', tb)
+  tb = re.sub('é', '\u00E9', tb)
+  tb = re.sub('ì', '\u00EC', tb)
+  tb = re.sub('ò', '\u00F2', tb)
+  tb = re.sub('ó', '\u00F3', tb)
+  tb = re.sub('ù', '\u00F9', tb)
 
   return tb
 
