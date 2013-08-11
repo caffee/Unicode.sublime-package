@@ -26,33 +26,34 @@ import sublime_plugin
 import re
 
 # Convert unicode escape sequences to characters
+# Python 2.6.5 used (?i) to ignore case
 def convert(tb):
   # Escape sequences: swedish, german, italian
-  tb = re.sub(r'\\u00C5', 'Å', tb)
-  tb = re.sub(r'\\u00C4', 'Ä', tb)
-  tb = re.sub(r'\\u00D6', 'Ö', tb)
-  tb = re.sub(r'\\u00DC', 'Ü', tb)
+  tb = re.sub(r'(?i)\\u00C5', 'Å', tb)
+  tb = re.sub(r'(?i)\\u00C4', 'Ä', tb)
+  tb = re.sub(r'(?i)\\u00D6', 'Ö', tb)
+  tb = re.sub(r'(?i)\\u00DC', 'Ü', tb)
 
-  tb = re.sub(r'\\u00C0', 'À', tb)
-  tb = re.sub(r'\\u00C8', 'È', tb)
-  tb = re.sub(r'\\u00C9', 'É', tb)
-  tb = re.sub(r'\\u00CC', 'Ì', tb)
-  tb = re.sub(r'\\u00D2', 'Ò', tb)
-  tb = re.sub(r'\\u00D3', 'Ó', tb)
-  tb = re.sub(r'\\u00D9', 'Ù', tb)
+  tb = re.sub(r'(?i)\\u00C0', 'À', tb)
+  tb = re.sub(r'(?i)\\u00C8', 'È', tb)
+  tb = re.sub(r'(?i)\\u00C9', 'É', tb)
+  tb = re.sub(r'(?i)\\u00CC', 'Ì', tb)
+  tb = re.sub(r'(?i)\\u00D2', 'Ò', tb)
+  tb = re.sub(r'(?i)\\u00D3', 'Ó', tb)
+  tb = re.sub(r'(?i)\\u00D9', 'Ù', tb)
 
-  tb = re.sub(r'\\u00E5', 'å', tb)
-  tb = re.sub(r'\\u00E4', 'ä', tb)
-  tb = re.sub(r'\\u00F6', 'ö', tb)
-  tb = re.sub(r'\\u00FC', 'ü', tb)
+  tb = re.sub(r'(?i)\\u00E5', 'å', tb)
+  tb = re.sub(r'(?i)\\u00E4', 'ä', tb)
+  tb = re.sub(r'(?i)\\u00F6', 'ö', tb)
+  tb = re.sub(r'(?i)\\u00FC', 'ü', tb)
 
-  tb = re.sub(r'\\u00E0', 'à', tb)
-  tb = re.sub(r'\\u00E8', 'è', tb)
-  tb = re.sub(r'\\u00E9', 'é', tb)
-  tb = re.sub(r'\\u00EC', 'ì', tb)
-  tb = re.sub(r'\\u00F2', 'ò', tb)
-  tb = re.sub(r'\\u00F3', 'ó', tb)
-  tb = re.sub(r'\\u00F9', 'ù', tb)
+  tb = re.sub(r'(?i)\\u00E0', 'à', tb)
+  tb = re.sub(r'(?i)\\u00E8', 'è', tb)
+  tb = re.sub(r'(?i)\\u00E9', 'é', tb)
+  tb = re.sub(r'(?i)\\u00EC', 'ì', tb)
+  tb = re.sub(r'(?i)\\u00F2', 'ò', tb)
+  tb = re.sub(r'(?i)\\u00F3', 'ó', tb)
+  tb = re.sub(r'(?i)\\u00F9', 'ù', tb)
 
   return tb
 
