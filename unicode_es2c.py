@@ -28,9 +28,12 @@ import re
 # Convert unicode escape sequences to characters
 # Python 2.6.5 used (?i) to ignore case
 def convert(tb):
-  # Escape sequences: swedish, german, italian
+  # Escape sequences: swedish, german, italian, dutch
   tb = re.sub(r'(?i)\\u00C5', 'Å', tb)
+
   tb = re.sub(r'(?i)\\u00C4', 'Ä', tb)
+  tb = re.sub(r'(?i)\\u00CB', 'Ë', tb)
+  tb = re.sub(r'(?i)\\u00CF', 'Ï', tb)
   tb = re.sub(r'(?i)\\u00D6', 'Ö', tb)
   tb = re.sub(r'(?i)\\u00DC', 'Ü', tb)
 
@@ -43,7 +46,10 @@ def convert(tb):
   tb = re.sub(r'(?i)\\u00D9', 'Ù', tb)
 
   tb = re.sub(r'(?i)\\u00E5', 'å', tb)
+
   tb = re.sub(r'(?i)\\u00E4', 'ä', tb)
+  tb = re.sub(r'(?i)\\u00EB', 'ë', tb)
+  tb = re.sub(r'(?i)\\u00EF', 'ï', tb)
   tb = re.sub(r'(?i)\\u00F6', 'ö', tb)
   tb = re.sub(r'(?i)\\u00FC', 'ü', tb)
 

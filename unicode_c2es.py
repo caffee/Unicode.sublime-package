@@ -27,9 +27,12 @@ import re
 
 # Convert unicode characters to escape sequences
 def convert(tb):
-  # Special characters: swedish, german, italian
+  # Special characters: swedish, german, italian, dutch
   tb = re.sub('Å', '\u00C5', tb)
+
   tb = re.sub('Ä', '\u00C4', tb)
+  tb = re.sub('Ë', '\u00CB', tb)
+  tb = re.sub('Ï', '\u00CF', tb)
   tb = re.sub('Ö', '\u00D6', tb)
   tb = re.sub('Ü', '\u00DC', tb)
 
@@ -42,7 +45,10 @@ def convert(tb):
   tb = re.sub('Ù', '\u00D9', tb)
 
   tb = re.sub('å', '\u00E5', tb)
+
   tb = re.sub('ä', '\u00E4', tb)
+  tb = re.sub('ë', '\u00EB', tb)
+  tb = re.sub('ï', '\u00EF', tb)
   tb = re.sub('ö', '\u00F6', tb)
   tb = re.sub('ü', '\u00FC', tb)
 
