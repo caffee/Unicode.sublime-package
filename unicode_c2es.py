@@ -90,6 +90,17 @@ def convert(tb):
   tb = re.sub('ç', '\u00E7', tb)
   tb = re.sub('œ', '\u0153', tb)
 
+  # Symbols
+  tb = re.sub('’', '\u2019', tb)
+  tb = re.sub('„', '\u201E', tb)
+  tb = re.sub('“', '\u201C', tb)
+  tb = re.sub('”', '\u201D', tb)
+  tb = re.sub('«', '\u00AB', tb)
+  tb = re.sub('»', '\u00BB', tb)
+  tb = re.sub('–', '\u2013', tb)
+  tb = re.sub('—', '\u2014', tb)
+  tb = re.sub('€', '\u20AC', tb)
+
   return tb
 
 class UnicodeCharactersToEscapeSequencesCommand(sublime_plugin.TextCommand):
