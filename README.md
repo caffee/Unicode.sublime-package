@@ -20,11 +20,11 @@ Usage
 * __Context Menu:__ `Convert Unicode`  
 * __Command Palette:__ `Convert ...`  
 * __Keymap:__ (Windows, Linux)  
-  * Unicode characters to escape sequences: `alt+shift+w`  
-  * Unicode escape sequences to characters: `alt+shift+e`  
+  * Unicode characters to escape sequences: <kbd>alt+shift+w</kbd>  
+  * Unicode escape sequences to characters: <kbd>alt+shift+e</kbd>  
 * __Keymap:__ (OSX)  
-  * Unicode characters to escape sequences: `super+alt+shift+w`  
-  * Unicode escape sequences to characters: `super+alt+shift+e`  
+  * Unicode characters to escape sequences: <kbd>⌥⇧⌘w</kbd>  
+  * Unicode escape sequences to characters: <kbd>⌥⇧⌘e</kbd>  
 
 LICENSE
 -------
